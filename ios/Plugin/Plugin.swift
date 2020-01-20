@@ -9,24 +9,24 @@ import Capacitor
 public class ScreenshotEvent: CAPPlugin {
     
     @objc func startWatchEvent(_ call: CAPPluginCall) {
-        DispatchQueue.main.async {
-            NotificationCenter.default.addObserver(self, selector: #selector(self.userDidTakeScreenshot(_:)), name: .UIApplicationUserDidTakeScreenshot, object: nil)
-            call.success([
-                "value": value
-            ])
-        }
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(self.didTakeScreenshot(notification:)),
+            name: UIApplication.userDidTakeScreenshotNotification,
+            object: nil)
+        call.success([
+            "value": true
+        ])
     }
     
     @objc func removeWatchEvent(_ call: CAPPluginCall) {
-        DispatchQueue.main.async {
-            NotificationCenter.default.removeObserver(self)
-            call.success([
-                "value": value
-            ])
-        }
+        NotificationCenter.default.removeObserver(self)
+        call.success([
+            "value": true
+        ])
     }
     
-    private func userDidTakeScreenshot(notification: Notification) {
+    @objc func didTakeScreenshot(notification: Notification) {
         NSLog("userDidTakeScreenshot")
         self.notifyListeners("userDidTakeScreenshot", data: ["value": true])
     }
