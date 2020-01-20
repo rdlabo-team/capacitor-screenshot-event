@@ -1,0 +1,1 @@
+# capacitor-screenshot-event
