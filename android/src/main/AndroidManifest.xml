@@ -1,4 +1,3 @@
-
-  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="jp.rdlabo.capacitor.plugin.screenshotevent">
-  </manifest>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.rdlabo.capacitor.plugin.screenshotevent">
+</manifest>
