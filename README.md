@@ -15,6 +15,8 @@ npx cap sync
 
 * [`startWatchEvent()`](#startwatchevent)
 * [`removeWatchEvent()`](#removewatchevent)
+* [`addListener(...)`](#addlistener)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -24,10 +26,8 @@ npx cap sync
 ### startWatchEvent()
 
 ```typescript
-startWatchEvent() => any
+startWatchEvent() => Promise<void>
 ```
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -35,11 +35,35 @@ startWatchEvent() => any
 ### removeWatchEvent()
 
 ```typescript
-removeWatchEvent() => any
+removeWatchEvent() => Promise<void>
 ```
 
-**Returns:** <code>any</code>
+--------------------
+
+
+### addListener(...)
+
+```typescript
+addListener(eventName: 'userDidTakeScreenshot', listenerFunc: () => void) => PluginListenerHandle
+```
+
+| Param              | Type                                 |
+| ------------------ | ------------------------------------ |
+| **`eventName`**    | <code>"userDidTakeScreenshot"</code> |
+| **`listenerFunc`** | <code>() =&gt; void</code>           |
+
+**Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
 --------------------
+
+
+### Interfaces
+
+
+#### PluginListenerHandle
+
+| Prop         | Type                                      |
+| ------------ | ----------------------------------------- |
+| **`remove`** | <code>() =&gt; Promise&lt;void&gt;</code> |
 
 </docgen-api>
