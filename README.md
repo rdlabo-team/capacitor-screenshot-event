@@ -9,6 +9,19 @@ npm install @rdlabo/capacitor-screenshot-event
 npx cap sync
 ```
 
+## Usage
+
+```ts
+(() => {
+  ScreenshotEvent.addListener('userDidTakeScreenshot', () => {
+    // Notice take screenshot
+  });
+
+  // Start watch take event
+  ScreenshotEvent.startWatchEvent();
+})();
+```
+
 ## API
 
 <docgen-index>
