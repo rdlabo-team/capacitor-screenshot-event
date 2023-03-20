@@ -6,13 +6,11 @@ import com.getcapacitor.JSObject;
 import com.google.android.gms.common.util.BiConsumer;
 
 public class ScreenshotEvent extends FileObserver {
+
     protected BiConsumer<String, JSObject> notifyListenersFunction;
     private final JSObject emptyObject = new JSObject();
 
-    public ScreenshotEvent(
-        String filepath,
-        BiConsumer<String, JSObject> notifyListenersFunction
-    ) {
+    public ScreenshotEvent(String filepath, BiConsumer<String, JSObject> notifyListenersFunction) {
         super(filepath);
         this.notifyListenersFunction = notifyListenersFunction;
     }

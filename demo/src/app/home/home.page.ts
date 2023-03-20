@@ -1,4 +1,4 @@
-import {Component, NgZone} from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { ScreenshotEvent } from '@rdlabo/capacitor-screenshot-event';
 
 @Component({
@@ -9,11 +9,9 @@ import { ScreenshotEvent } from '@rdlabo/capacitor-screenshot-event';
 export class HomePage {
   isEnabled = false;
   didNoticed = false;
-  constructor(
-    private zone: NgZone,
-  ) {
+  constructor(private zone: NgZone) {
     ScreenshotEvent.addListener('userDidTakeScreenshot', () => {
-      this.zone.run(() => this.didNoticed = true);
+      this.zone.run(() => (this.didNoticed = true));
     });
   }
 
@@ -25,5 +23,4 @@ export class HomePage {
       ScreenshotEvent.removeWatchEvent();
     }
   }
-
 }

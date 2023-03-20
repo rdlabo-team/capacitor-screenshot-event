@@ -4,7 +4,7 @@ const config: CapacitorConfig = {
   appId: 'jp.capacitor.screenshotevent',
   appName: 'demo',
   webDir: 'www',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
 };
 
 export default config;

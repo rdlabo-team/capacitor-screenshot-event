@@ -1,8 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Blank </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +12,12 @@
     </ion-item>
     <ion-item>
       <ion-label>Notificaation</ion-label>
-      <ion-icon slot="end" name="checkmark-circle" *ngIf="didNoticed" [color]="didNoticed ? 'success' : 'danger'"></ion-icon>
+      <ion-icon
+        slot="end"
+        name="checkmark-circle"
+        *ngIf="didNoticed"
+        [color]="didNoticed ? 'success' : 'danger'"
+      ></ion-icon>
     </ion-item>
   </ion-list>
 </ion-content>

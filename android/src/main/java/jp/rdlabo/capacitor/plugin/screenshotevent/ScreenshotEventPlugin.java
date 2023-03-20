@@ -1,7 +1,6 @@
 package jp.rdlabo.capacitor.plugin.screenshotevent;
 
 import android.os.Environment;
-
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
