@@ -52,6 +52,7 @@
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^2.0.0",
     "@ionic/swiftlint-config": "^1.1.2",
+    "@types/node": "^17.0.41",
     "eslint": "^7.11.0",
     "np": "^7.5.0",
     "prettier": "~2.3.0",
@@ -63,6 +64,9 @@
   },
   "peerDependencies": {
     "@capacitor/core": "^4.0.0"
+  },
+  "overrides": {
+    "@types/node": "17.0.41"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
