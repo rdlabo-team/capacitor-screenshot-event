@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "jp.capacitor.screenshotevent"
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "jp.capacitor.screenshotevent"

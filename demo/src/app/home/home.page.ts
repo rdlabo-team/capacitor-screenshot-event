@@ -18,7 +18,7 @@ export class HomePage {
   initialize(event: CustomEvent) {
     this.didNoticed = false;
     if (event.detail.checked) {
-      ScreenshotEvent.startWatchEvent();
+      ScreenshotEvent.startWatchEvent().then(() => console.log('startWatchEvent'))
     } else {
       ScreenshotEvent.removeWatchEvent();
     }
