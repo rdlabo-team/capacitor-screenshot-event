@@ -4,5 +4,5 @@ export interface ScreenshotEventPlugin {
   startWatchEvent(): Promise<void>;
   removeWatchEvent(): Promise<void>;
 
-  addListener(eventName: 'userDidTakeScreenshot', listenerFunc: () => void): PluginListenerHandle;
+  addListener(eventName: 'userDidTakeScreenshot', listenerFunc: () => void): Promise<PluginListenerHandle>;
 }

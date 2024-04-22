@@ -57,7 +57,7 @@ removeWatchEvent() => Promise<void>
 ### addListener(...)
 
 ```typescript
-addListener(eventName: 'userDidTakeScreenshot', listenerFunc: () => void) => PluginListenerHandle
+addListener(eventName: 'userDidTakeScreenshot', listenerFunc: () => void) => Promise<PluginListenerHandle>
 ```
 
 | Param              | Type                                 |
@@ -65,7 +65,7 @@ addListener(eventName: 'userDidTakeScreenshot', listenerFunc: () => void) => Plu
 | **`eventName`**    | <code>"userDidTakeScreenshot"</code> |
 | **`listenerFunc`** | <code>() =&gt; void</code>           |
 
-**Returns:** <code><a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
+**Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
 
 --------------------
 
