@@ -1,13 +1,25 @@
-import { Component, NgZone } from '@angular/core';
 import { ScreenshotEvent } from '@rdlabo/capacitor-screenshot-event';
-import { addIcons } from "ionicons";
-import { checkmarkCircle } from "ionicons/icons";
+import {Component, NgZone} from '@angular/core';
+import {
+  IonHeader,
+  IonToolbar,
+  IonTitle,
+  IonContent,
+  IonList,
+  IonItem,
+  IonLabel,
+  IonToggle, IonIcon
+} from '@ionic/angular/standalone';
+import {addIcons} from 'ionicons';
+import {checkmarkCircle} from 'ionicons/icons';
+import {FormsModule} from '@angular/forms';
+import {NgIf} from '@angular/common';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: 'home.page.html',
-    styleUrls: ['home.page.scss'],
-    standalone: false
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonToggle, FormsModule, IonIcon, NgIf],
 })
 export class HomePage {
     isEnabled = false;
