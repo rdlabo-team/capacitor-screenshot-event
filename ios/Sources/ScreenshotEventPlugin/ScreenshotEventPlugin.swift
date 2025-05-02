@@ -7,12 +7,12 @@ import Capacitor
  */
 @objc(ScreenshotEventPlugin)
 public class ScreenshotEventPlugin: CAPPlugin, CAPBridgedPlugin {
-    public let identifier = "ScreenshotEventPlugin" 
-    public let jsName = "ScreenshotEvent" 
+    public let identifier = "ScreenshotEventPlugin"
+    public let jsName = "ScreenshotEvent"
     public let pluginMethods: [CAPPluginMethod] = [
         CAPPluginMethod(name: "startWatchEvent", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "removeWatchEvent", returnType: CAPPluginReturnPromise),
-    ] 
+    ]
     @objc func startWatchEvent(_ call: CAPPluginCall) {
         NotificationCenter.default.addObserver(
             self,
