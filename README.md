@@ -28,7 +28,7 @@ npx cap sync
 
 * [`startWatchEvent()`](#startwatchevent)
 * [`removeWatchEvent()`](#removewatchevent)
-* [`addListener(...)`](#addlistener)
+* [`addListener('userDidTakeScreenshot', ...)`](#addlisteneruserdidtakescreenshot-)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -54,7 +54,7 @@ removeWatchEvent() => Promise<void>
 --------------------
 
 
-### addListener(...)
+### addListener('userDidTakeScreenshot', ...)
 
 ```typescript
 addListener(eventName: 'userDidTakeScreenshot', listenerFunc: () => void) => Promise<PluginListenerHandle>
@@ -62,7 +62,7 @@ addListener(eventName: 'userDidTakeScreenshot', listenerFunc: () => void) => Pro
 
 | Param              | Type                                 |
 | ------------------ | ------------------------------------ |
-| **`eventName`**    | <code>"userDidTakeScreenshot"</code> |
+| **`eventName`**    | <code>'userDidTakeScreenshot'</code> |
 | **`listenerFunc`** | <code>() =&gt; void</code>           |
 
 **Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt;</code>
