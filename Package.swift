@@ -6,7 +6,7 @@ let package = Package(
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "ScreenshotEventPlugin",
+            name: "RdlaboCapacitorScreenshotEvent",
             targets: ["ScreenshotEventPlugin"])
     ],
     dependencies: [
