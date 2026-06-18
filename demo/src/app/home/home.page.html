@@ -12,12 +12,13 @@
     </ion-item>
     <ion-item>
       <ion-label>Notificaation</ion-label>
-      <ion-icon
-        slot="end"
-        name="checkmark-circle"
-        *ngIf="didNoticed"
-        [color]="didNoticed ? 'success' : 'danger'"
-      ></ion-icon>
+      @if (didNoticed) {
+        <ion-icon
+          slot="end"
+          name="checkmark-circle"
+          [color]="didNoticed ? 'success' : 'danger'"
+        ></ion-icon>
+      }
     </ion-item>
   </ion-list>
 </ion-content>

@@ -13,13 +13,13 @@ import {
 import {addIcons} from 'ionicons';
 import {checkmarkCircle} from 'ionicons/icons';
 import {FormsModule} from '@angular/forms';
-import {NgIf} from '@angular/common';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonToggle, FormsModule, IonIcon, NgIf],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonToggle, FormsModule, IonIcon],
 })
 export class HomePage {
     isEnabled = false;
