@@ -1,5 +1,6 @@
 {
   "name": "@rdlabo/capacitor-screenshot-event",
+  "private": false,
   "version": "8.0.0",
   "description": "Notification that user shot screenshot",
   "main": "dist/plugin.cjs.js",
